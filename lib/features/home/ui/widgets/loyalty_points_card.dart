@@ -8,6 +8,7 @@ import 'package:technical_assesment/core/constants/app_radius.dart';
 import 'package:technical_assesment/core/constants/app_spacing.dart';
 import 'package:technical_assesment/core/constants/assets_paths.dart';
 import 'package:technical_assesment/features/home/ui/widgets/loyalty_progress_widget.dart';
+import 'package:technical_assesment/features/home/ui/widgets/orders_images.dart';
 import 'package:technical_assesment/features/home/ui/widgets/total_orders_images.dart';
 import 'package:technical_assesment/features/profile/data/models/loyalty_history_model.dart';
 
@@ -84,7 +85,7 @@ class LoyaltyPointsCard extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              _buildOrdersImages(venueImages, hasMore),
+              OrdersImages(venueImages: venueImages, hasMore: hasMore),
               _buildContinueButton(onPressed),
             ],
           ).paddingHorizontalSm(),
@@ -114,30 +115,5 @@ Widget _buildContinueButton(VoidCallback onPressed) {
         Icon(Icons.arrow_forward),
       ],
     ),
-  );
-}
-
-Widget _buildOrdersImages(List<String> venueImages, bool hasMore) {
-  return Row(
-    children: [
-      ...venueImages.asMap().entries.map(
-        (entry) => TotalOrdersImages(
-          orderImageUrl: entry.value,
-          size: 45,
-        ).paddingHorizontalXxs(),
-      ),
-
-      if (hasMore) AppSpacing.xxs.width,
-      Container(
-        width: 40,
-        height: 40,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(AppRadius.card),
-          color: AppColors.white.withAlpha(20),
-          border: Border.all(color: AppColors.white.withAlpha(50), width: 1),
-        ),
-        child: Icon(Icons.add, color: AppColors.white, size: 20),
-      ),
-    ],
   );
 }
