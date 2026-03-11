@@ -9,7 +9,8 @@ import 'package:technical_assesment/features/profile/ui/widgets/profile_section.
 
 import '../../../../app/theme/app_colors.dart';
 import '../../../../app/theme/app_text_styles.dart';
-import '../../../../core/constants/app_spacing.dart';
+import '../../../../core/constants/app_radius.dart';
+import '../../../../core/constants/assets_paths.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -24,14 +25,15 @@ class ProfilePage extends StatelessWidget {
         title: const Text('Your Profile', style: AppTextStyles.sectionTitle),
         leading: Icon(Icons.arrow_back_ios_new).onTap(context.goToHome),
         actions: [
-          IconButton(
-            icon: const Icon(Icons.settings_outlined),
-            onPressed: () {
-              ScaffoldMessenger.of(
-                context,
-              ).showSnackBar(const SnackBar(content: Text('Settings clicked')));
-            },
-          ),
+          Container(
+            height: 28,
+            width: 28,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(AssetPaths.settingsIcon),
+              ),
+            ),
+          ).paddingHorizontalSm(),
         ],
       ),
       body: SingleChildScrollView(
