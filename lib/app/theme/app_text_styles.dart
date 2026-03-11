@@ -36,7 +36,7 @@ class AppTextStyles {
   static const TextStyle cardLabel = TextStyle(
     fontFamily: 'Satoshi',
     fontSize: 12,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w500,
     color: AppColors.textSecondary,
   );
 
