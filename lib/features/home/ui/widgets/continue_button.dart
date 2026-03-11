@@ -16,7 +16,7 @@ class ContinueButton extends StatelessWidget {
     return ElevatedButton(
       clipBehavior: Clip.antiAlias,
       style: ElevatedButton.styleFrom(
-        padding: EdgeInsets.all(AppSpacing.xs),
+        padding: EdgeInsets.symmetric(horizontal: AppSpacing.md),
         foregroundColor: Colors.white,
         side: BorderSide(color: Colors.white),
         shape: RoundedRectangleBorder(
