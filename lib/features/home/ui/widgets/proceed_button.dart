@@ -12,7 +12,6 @@ class ProceedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return IconButton(
       constraints: BoxConstraints.tight(const Size(35, 35)),
-      padding: EdgeInsets.zero,
       iconSize: 18,
       onPressed: onPressed,
       icon: const Icon(Icons.arrow_forward_ios),
