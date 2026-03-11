@@ -44,13 +44,13 @@ class VenueCard extends StatelessWidget {
                               children: [
                                 Text(
                                   venue.category,
-                                  style: AppTextStyles.venueCategory,
+                                  style: AppTextStyles.of(context).venueCategory,
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                 ),
                                 Text(
                                   venue.name,
-                                  style: AppTextStyles.venueName,
+                                  style: AppTextStyles.of(context).venueNames,
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                 ),

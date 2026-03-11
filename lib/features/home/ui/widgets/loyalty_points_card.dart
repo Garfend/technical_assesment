@@ -45,7 +45,7 @@ class LoyaltyPointsCard extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Column(
+             const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('AlterNow', style: AppTextStyles.cardAlter),
@@ -76,7 +76,7 @@ class LoyaltyPointsCard extends StatelessWidget {
 
           Row(
             children: [
-              Text('Total orders: ', style: AppTextStyles.cardLabel),
+             const Text('Total orders: ', style: AppTextStyles.cardLabel),
               Text('$totalOrders', style: AppTextStyles.cardLabelGold),
             ],
           ).paddingHorizontalSm(),

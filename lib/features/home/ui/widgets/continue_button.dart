@@ -28,9 +28,9 @@ class ContinueButton extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text('More details', style: AppTextStyles.button),
+          const Text('More details', style: AppTextStyles.button),
           AppSpacing.xxs.width,
-          Icon(Icons.arrow_forward, size: AppSpacing.md,),
+          const Icon(Icons.arrow_forward, size: AppSpacing.md,),
         ],
       ),
     );

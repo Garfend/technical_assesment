@@ -27,7 +27,7 @@ class ProfileSection extends StatelessWidget {
             ],
           ),
         ),
-        Text('Edit', style: AppTextStyles.editButton),
+        const Text('Edit', style: AppTextStyles.editButton),
       ],
     );
   }
