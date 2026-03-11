@@ -76,14 +76,17 @@ class HomePage extends StatelessWidget {
             SliverPadding(
               padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
               sliver: SliverMasonryGrid(
-                mainAxisSpacing: AppSpacing.md,
-                crossAxisSpacing: AppSpacing.md,
+                mainAxisSpacing: AppSpacing.sm,
+                crossAxisSpacing: AppSpacing.sm,
                 gridDelegate: const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                 ),
                 delegate: SliverChildBuilderDelegate(
                       (context, index) {
-                    final double currentAspectRatio = index.isEven ? 0.75 : 0.9;
+                        // this is not even the left side is a bit shorter than right side
+                        // to even them out remove the "!" from "!index.isEven"
+                        // it is like that to match figma design
+                    final double currentAspectRatio = !index.isEven ? 0.90 : 1.0;
                     return AspectRatio(
                       aspectRatio: currentAspectRatio,
                       child: VenueCard(
