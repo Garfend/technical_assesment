@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                         style: AppTextStyles.welcomeLabel,
                       ),
                       AppSpacing.xxs.height,
-                      Text(user.name!, style: AppTextStyles.loyaltyPoints),
+                      Text(user.name!, style: AppTextStyles.goldGradiantNumber,),
                     ],
                   ),
                   _buildProfileIcon(context),
