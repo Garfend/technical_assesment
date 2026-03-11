@@ -25,7 +25,7 @@ class OrdersImages extends StatelessWidget {
         ...venueImages.asMap().entries.map(
           (entry) => TotalOrdersImages(
             orderImageUrl: entry.value,
-            size: 35,
+            size: 40,
           ).paddingHorizontalXxs(),
         ),
       ],
