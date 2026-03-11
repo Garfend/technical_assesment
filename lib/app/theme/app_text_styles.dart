@@ -3,7 +3,11 @@ import 'package:flutter/material.dart';
 import 'app_colors.dart';
 
 class AppTextStyles {
-  AppTextStyles._();
+
+  static AppTextStyles of(BuildContext context) => AppTextStyles._internal(context);
+
+  final BuildContext context;
+  AppTextStyles._internal(this.context);
 
   // Home - Greeting
   static const TextStyle welcomeLabel = TextStyle(
