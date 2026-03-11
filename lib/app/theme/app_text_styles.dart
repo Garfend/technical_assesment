@@ -107,6 +107,13 @@ class AppTextStyles {
     color: AppColors.gold,
   );
 
+  static const TextStyle loyaltyName = TextStyle(
+    fontFamily: 'Satoshi',
+    fontSize: 18,
+    fontWeight: FontWeight.w700,
+    color: AppColors.gold,
+  );
+
   // Profile
   static const TextStyle profileTitle = TextStyle(
     fontFamily: 'Satoshi',

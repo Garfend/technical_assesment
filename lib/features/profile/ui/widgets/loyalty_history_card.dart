@@ -47,7 +47,7 @@ class LoyaltyHistoryCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 AppSpacing.xxxs.height,
-                Text(loyaltyHistory.venueName, style: AppTextStyles.venueName),
+                Text(loyaltyHistory.venueName, style: AppTextStyles.loyaltyName),
                 AppSpacing.xxxs.height,
                 Text(
                   loyaltyHistory.formattedDate.toString(),
