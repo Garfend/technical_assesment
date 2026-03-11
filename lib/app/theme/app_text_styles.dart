@@ -35,8 +35,8 @@ class AppTextStyles {
   // Loyalty Card
   static const TextStyle cardLabel = TextStyle(
     fontFamily: 'Satoshi',
-    fontSize: 12,
-    fontWeight: FontWeight.w500,
+    fontSize: 14,
+    fontWeight: FontWeight.w600,
     color: AppColors.textSecondary,
   );
 
@@ -56,8 +56,8 @@ class AppTextStyles {
 
   static const TextStyle cardLabelGold = TextStyle(
     fontFamily: 'Satoshi',
-    fontSize: 12,
-    fontWeight: FontWeight.w400,
+    fontSize: 14,
+    fontWeight: FontWeight.w600,
     color: AppColors.badgeGold,
   );
 
