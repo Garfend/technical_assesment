@@ -84,10 +84,10 @@ class MockData {
       venueName: 'Nobiko Bistro',
       venueImageUrl: AssetPaths.image1,
       date: DateTime(2025, 1, 6),
-      creditsBadge: 325,
+      creditsBadge: 10000,
       amountValue: 125.32,
       currencyCode: currencyCode,
-      creditsEarned: 230,
+      creditsEarned: 10000,
     ),
     LoyaltyHistoryModel(
       id: '5',
