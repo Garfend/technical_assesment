@@ -28,18 +28,6 @@ class OrdersImages extends StatelessWidget {
             size: 35,
           ).paddingHorizontalXxs(),
         ),
-
-        if (hasMore) AppSpacing.xxs.width,
-        Container(
-          width: 35,
-          height: 35,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadius.card),
-            color: AppColors.white.withAlpha(20),
-            border: Border.all(color: AppColors.white.withAlpha(50), width: 1),
-          ),
-          child: Icon(Icons.add, color: AppColors.white, size: 20),
-        ),
       ],
     );
   }
