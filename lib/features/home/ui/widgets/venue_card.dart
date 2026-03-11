@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:technical_assesment/core/config/double_extensions.dart';
 import 'package:technical_assesment/features/home/ui/widgets/blur_filter.dart';
 import 'package:technical_assesment/features/home/ui/widgets/proceed_button.dart';
 
@@ -32,14 +33,14 @@ class VenueCard extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(
                         horizontal: AppSpacing.md,
-                        vertical: AppSpacing.sm,
+                        vertical: AppSpacing.xs,
                       ),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Expanded(
                             child: Column(
-                              mainAxisAlignment: MainAxisAlignment.end,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
