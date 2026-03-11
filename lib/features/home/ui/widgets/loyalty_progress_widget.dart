@@ -14,27 +14,32 @@ class LoyaltyProgressWidget extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(AppRadius.circular),
-        ),
-        clipBehavior: Clip.antiAlias,
-        height: 20,
-        child: Stack(
-          children: [
-            // Background
-            Container(
-              color: AppColors.black,
-            ),
-            FractionallySizedBox(
-              widthFactor: progress,
-              child: Container(
-                decoration: BoxDecoration(
-                  gradient: AppColors.goldGradient,
-                ),
+      height: 26,
+      width: double.infinity,
+      decoration: BoxDecoration(
+        color: AppColors.black,
+        borderRadius: BorderRadius.circular(AppRadius.circular),
+      ),
+      child: Stack(
+        children: [
+          FractionallySizedBox(
+            widthFactor: progress.clamp(0.0, 1.0),
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: AppColors.goldGradient,
+                borderRadius: BorderRadius.circular(AppRadius.circular),
+                boxShadow: [
+                  BoxShadow(
+                    color: AppColors.dropShadow.withOpacity(0.4),
+                    blurRadius: AppRadius.button,
+                    offset: const Offset(0, 5),
+                  ),
+                ],
               ),
             ),
-          ],
-        ),
-      );
+          ),
+        ],
+      ),
+    );
   }
 }
