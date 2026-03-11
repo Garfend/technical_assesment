@@ -160,9 +160,9 @@ class AppTextStyles {
 
   static const TextStyle editButton = TextStyle(
     fontFamily: 'Satoshi',
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: FontWeight.w500,
-    color: AppColors.textPrimary,
+    color: AppColors.gold,
   );
 
   // Loyalty History
