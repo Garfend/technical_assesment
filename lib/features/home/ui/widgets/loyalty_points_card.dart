@@ -2,15 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:technical_assesment/app/theme/app_colors.dart';
 import 'package:technical_assesment/app/theme/app_text_styles.dart';
 import 'package:technical_assesment/core/business_logic/loyalty_calculator.dart';
-import 'package:technical_assesment/core/config/double_extensions.dart';
 import 'package:technical_assesment/core/config/widget_extensions.dart';
 import 'package:technical_assesment/core/constants/app_radius.dart';
-import 'package:technical_assesment/core/constants/app_spacing.dart';
 import 'package:technical_assesment/core/constants/assets_paths.dart';
 import 'package:technical_assesment/features/home/ui/widgets/continue_button.dart';
 import 'package:technical_assesment/features/home/ui/widgets/loyalty_progress_widget.dart';
 import 'package:technical_assesment/features/home/ui/widgets/orders_images.dart';
-import 'package:technical_assesment/features/home/ui/widgets/total_orders_images.dart';
 import 'package:technical_assesment/features/profile/data/models/loyalty_history_model.dart';
 
 class LoyaltyPointsCard extends StatelessWidget {
