@@ -168,7 +168,7 @@ class AppTextStyles {
   // Buttons
   static const TextStyle button = TextStyle(
     fontFamily: 'Satoshi',
-    fontSize: 12,
+    fontSize: 10,
     fontWeight: FontWeight.w600,
     color: AppColors.white,
   );
