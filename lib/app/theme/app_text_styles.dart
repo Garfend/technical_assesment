@@ -162,7 +162,7 @@ class AppTextStyles {
     fontFamily: 'Satoshi',
     fontSize: 16,
     fontWeight: FontWeight.w500,
-    color: AppColors.gold,
+    color: AppColors.goldLight,
   );
 
   // Loyalty History
