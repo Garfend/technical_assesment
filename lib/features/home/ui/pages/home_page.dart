@@ -12,6 +12,7 @@ import 'package:technical_assesment/features/home/ui/widgets/loyalty_points_card
 import 'package:technical_assesment/features/home/ui/widgets/venue_card.dart';
 
 import '../../../../app/theme/app_text_styles.dart';
+import '../../../../core/constants/assets_paths.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -121,6 +122,12 @@ Widget _buildProfileIcon(BuildContext context) {
         width: AppSpacing.xxs / 2,
       ),
     ),
-    child: const Icon(Icons.person_outline, color: Colors.white, size: 30),
+    child: Image.asset(
+      AssetPaths.userIcon,
+      width: 40,
+      height: 40,
+      color: AppColors.white,
+      fit: BoxFit.contain,
+    ).paddingHorizontalSm(),
   ).onTap(context.goTopProfile);
 }
