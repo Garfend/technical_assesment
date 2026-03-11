@@ -97,6 +97,13 @@ class AppTextStyles {
     color: AppColors.textPrimary,
   );
 
+  static const TextStyle sectionTitleProfile = TextStyle(
+    fontFamily: 'Satoshi',
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+    color: AppColors.textPrimary,
+  );
+
   // Venue Card
   TextStyle get venueCategory => TextStyle(
     fontFamily: 'Satoshi',
