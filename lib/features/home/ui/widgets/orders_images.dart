@@ -25,14 +25,14 @@ class OrdersImages extends StatelessWidget {
         ...venueImages.asMap().entries.map(
           (entry) => TotalOrdersImages(
             orderImageUrl: entry.value,
-            size: 45,
+            size: 35,
           ).paddingHorizontalXxs(),
         ),
 
         if (hasMore) AppSpacing.xxs.width,
         Container(
-          width: 40,
-          height: 40,
+          width: 35,
+          height: 35,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadius.card),
             color: AppColors.white.withAlpha(20),
