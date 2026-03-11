@@ -104,7 +104,7 @@ class AppTextStyles {
     fontFamily: 'Satoshi',
     fontSize: 18,
     fontWeight: FontWeight.w700,
-    color: AppColors.textPrimary,
+    color: AppColors.gold,
   );
 
   // Profile
