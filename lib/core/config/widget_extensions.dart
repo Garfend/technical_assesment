@@ -212,7 +212,6 @@ extension PaddingExtension on Widget {
   Widget paddingHorizontalXxs() => paddingHorizontal(AppSpacing.xxs);
   Widget paddingHorizontalXs() => paddingHorizontal(AppSpacing.xs);
   Widget paddingHorizontalSm() => paddingHorizontal(AppSpacing.sm);
-  Widget paddingHorizontalSmpaddingHorizontalMd() => paddingHorizontal(AppSpacing.md);
   Widget paddingHorizontalLg() => paddingHorizontal(AppSpacing.lg);
   Widget paddingHorizontalXl() => paddingHorizontal(AppSpacing.xl);
 }
