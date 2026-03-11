@@ -39,7 +39,7 @@ class VenueCard extends StatelessWidget {
                         children: [
                           Expanded(
                             child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.end,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
