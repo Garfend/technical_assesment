@@ -20,7 +20,7 @@ class TotalOrdersImages extends StatelessWidget {
       width: size,
       height: size,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppRadius.card),
+        borderRadius: BorderRadius.circular(AppRadius.button),
         border: Border.all(color: AppColors.black, width: AppRadius.card / 6),
         image: DecorationImage(
           image: AssetImage(orderImageUrl),
