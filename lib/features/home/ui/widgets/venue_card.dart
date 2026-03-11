@@ -48,7 +48,6 @@ class VenueCard extends StatelessWidget {
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                 ),
-                                const SizedBox(height: AppSpacing.xxs),
                                 Text(
                                   venue.name,
                                   style: AppTextStyles.venueName,
