@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:technical_assesment/core/config/double_extensions.dart';
 import 'package:technical_assesment/features/home/ui/widgets/blur_filter.dart';
 import 'package:technical_assesment/features/home/ui/widgets/proceed_button.dart';
 
