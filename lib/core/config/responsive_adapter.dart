@@ -150,4 +150,15 @@ extension ResponsiveContext on BuildContext {
 
   /// Scale font size responsively
   double scaleFont(double fontSize) => responsive.scaleFont(fontSize);
+
+  /// Text Responsiveness
+  double responsiveFont(double mobile, {double? smallMobile, double? tablet, double? largerTables}) {
+    double width = MediaQuery.of(this).size.width;
+
+    if (width >= 1000 && largerTables != null) return largerTables;
+    if (width >= 600 && tablet != null) return tablet;
+    if (width < 420 && smallMobile != null) return smallMobile;
+
+    return mobile;
+  }
 }
