@@ -15,6 +15,7 @@ class AppColors {
   );
   // Scaffolding
   static const Color scaffoldBackground = Color(0xFF000000);
+
   // Neutrals
   static const Color cardDark = Color(0xFF323232);
   static const Color cardLightDark = Color(0xFF4A4A4A);
@@ -33,4 +34,7 @@ class AppColors {
   static const Color badgeGold = Color(0xFFE4B679);
   static const Color progressBarFill = Color(0xFFFEE5C4);
   static const Color progressBarTrack = Color(0xFF323232);
+
+  // drop shadow
+  static const Color dropShadow = Color(0xF0CB9A4D);
 }
