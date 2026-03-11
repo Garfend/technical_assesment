@@ -56,7 +56,6 @@ class VenueCard extends StatelessWidget {
                                 ),
                               ],
                             ),
-                          ),
                           ProceedButton(onPressed: onPressed),
                         ],
                       ),
