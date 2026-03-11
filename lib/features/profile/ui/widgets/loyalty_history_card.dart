@@ -55,7 +55,7 @@ class LoyaltyHistoryCard extends StatelessWidget {
                 ),
                 AppSpacing.md.height,
                 Text(
-                  '${loyaltyHistory.formattedAmount} • ${loyaltyHistory.creditsBadge} Credits',
+                  '${loyaltyHistory.formattedAmount} • ${loyaltyHistory.creditsEarned} Credits',
                   style: AppTextStyles.goldGradiant,
                 ),
               ],
