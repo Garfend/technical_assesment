@@ -10,17 +10,18 @@ class ProceedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppRadius.circular),
-        border: Border.all(
-          color: AppColors.white.withAlpha(40),
-        )
-      ),
-      child: IconButton(
-        onPressed: onPressed,
-        icon: Icon(Icons.arrow_forward_ios),
-        color: AppColors.gold,
+    return IconButton(
+      constraints: BoxConstraints.tight(const Size(35, 35)),
+      padding: EdgeInsets.zero,
+      iconSize: 18,
+      onPressed: onPressed,
+      icon: const Icon(Icons.arrow_forward_ios),
+      color: AppColors.gold,
+      style: IconButton.styleFrom(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppRadius.circular),
+          side: BorderSide(color: AppColors.white.withAlpha(40)),
+        ),
       ),
     );
   }
