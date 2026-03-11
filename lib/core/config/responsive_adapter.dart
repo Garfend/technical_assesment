@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:technical_assesment/core/constants/app_spacing.dart';
-import 'package:technical_assesment/core/constants/app_radius.dart';
 
 class ResponsiveAdapter {
   final BuildContext context;
@@ -9,9 +7,6 @@ class ResponsiveAdapter {
 
   /// Breakpoint for tablet screens
   static const double tabletBreakpoint = 600.0;
-
-  /// Base design width
-  static const double baseDesignWidth = 375.0;
 
   /// Get screen width
   double get screenWidth => MediaQuery.of(context).size.width;
@@ -38,27 +33,9 @@ class ResponsiveAdapter {
     return value * scaleFactor;
   }
 
-  /// Scale a font size based on the current screen size
-  double scaleFont(double fontSize) {
-    return fontSize * scaleFactor;
-  }
-
-  /// Get responsive spacing values
-  ResponsiveSpacing get spacing => ResponsiveSpacing(this);
-
-  /// Get responsive radius values
-  ResponsiveRadius get radius => ResponsiveRadius(this);
-
   /// Get the ResponsiveAdapter from the widget tree
   static ResponsiveAdapter? maybeOf(BuildContext context) {
     return context.dependOnInheritedWidgetOfExactType<_ResponsiveInherited>()?.adapter;
-  }
-
-  /// Get the ResponsiveAdapter from the widget tree
-  static ResponsiveAdapter of(BuildContext context) {
-    final adapter = maybeOf(context);
-    assert(adapter != null, 'ResponsiveAdapter not found in context. Wrap your app with ResponsiveProvider.');
-    return adapter ?? ResponsiveAdapter(context);
   }
 }
 
@@ -98,31 +75,6 @@ class ResponsiveProvider extends StatelessWidget {
       },
     );
   }
-}
-
-/// Responsive spacing with automatic scaling
-class ResponsiveSpacing {
-  final ResponsiveAdapter adapter;
-
-  ResponsiveSpacing(this.adapter);
-
-  double get xxs => adapter.scale(AppSpacing.xxs);
-  double get xs => adapter.scale(AppSpacing.xs);
-  double get sm => adapter.scale(AppSpacing.sm);
-  double get md => adapter.scale(AppSpacing.md);
-  double get lg => adapter.scale(AppSpacing.lg);
-  double get xl => adapter.scale(AppSpacing.xl);
-}
-
-/// Responsive radius with automatic scaling
-class ResponsiveRadius {
-  final ResponsiveAdapter adapter;
-
-  ResponsiveRadius(this.adapter);
-
-  double get card => adapter.scale(AppRadius.card);
-  double get button => adapter.scale(AppRadius.button);
-  double get circular => AppRadius.circular;
 }
 
 /// Extension on BuildContext for easy access to responsive adapter
