@@ -31,7 +31,7 @@ class VenueCard extends StatelessWidget {
                     BlurFilter(),
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                        horizontal: AppSpacing.md,
+                        horizontal: AppSpacing.sm,
                         vertical: AppSpacing.xs,
                       ),
                       child: Row(
