@@ -71,7 +71,7 @@ class AppTextStyles {
   static const TextStyle totalOrdersLabel = TextStyle(
     fontFamily: 'Satoshi',
     fontSize: 14,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w500,
     color: AppColors.textSecondary,
   );
 
