@@ -7,6 +7,7 @@ import 'package:technical_assesment/core/config/widget_extensions.dart';
 import 'package:technical_assesment/core/constants/app_radius.dart';
 import 'package:technical_assesment/core/constants/app_spacing.dart';
 import 'package:technical_assesment/core/constants/assets_paths.dart';
+import 'package:technical_assesment/features/home/ui/widgets/continue_button.dart';
 import 'package:technical_assesment/features/home/ui/widgets/loyalty_progress_widget.dart';
 import 'package:technical_assesment/features/home/ui/widgets/orders_images.dart';
 import 'package:technical_assesment/features/home/ui/widgets/total_orders_images.dart';
@@ -86,34 +87,11 @@ class LoyaltyPointsCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               OrdersImages(venueImages: venueImages, hasMore: hasMore),
-              _buildContinueButton(onPressed),
+              ContinueButton(onPressed: onPressed),
             ],
           ).paddingHorizontalSm(),
         ],
       ).paddingAllXs(),
     ).paddingAllSm();
   }
-}
-
-Widget _buildContinueButton(VoidCallback onPressed) {
-  return ElevatedButton(
-    clipBehavior: Clip.antiAlias,
-    style: ElevatedButton.styleFrom(
-      backgroundColor: Colors.transparent,
-      foregroundColor: Colors.white,
-      side: BorderSide(color: Colors.white),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(AppRadius.circular),
-      ),
-    ),
-    onPressed: onPressed,
-    child: Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Text('More details', style: AppTextStyles.button),
-        AppSpacing.xxs.width,
-        Icon(Icons.arrow_forward),
-      ],
-    ),
-  );
 }
