@@ -13,6 +13,7 @@ class AssetPaths {
 
 
   // icons
-  static const String userIcon = '$iconBase/user.png';
+  static const String userIcon = '$iconBase/user.png'
+  ;static const String settingsIcon = '$iconBase/settings.png';
 
 }
