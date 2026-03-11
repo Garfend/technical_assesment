@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../core/config/responsive_adapter.dart';
 import 'app_colors.dart';
 
 class AppTextStyles {
@@ -97,16 +98,26 @@ class AppTextStyles {
   );
 
   // Venue Card
-  static const TextStyle venueCategory = TextStyle(
+  TextStyle get venueCategory => TextStyle(
     fontFamily: 'Satoshi',
-    fontSize: 12,
+    fontSize: context.responsiveFont(
+      12,
+      smallMobile: 10,
+      tablet: 20,
+      largerTables: 28,
+    ),
     fontWeight: FontWeight.w400,
     color: AppColors.textSecondary,
   );
 
-  static const TextStyle venueName = TextStyle(
+  TextStyle get venueNames => TextStyle(
     fontFamily: 'Satoshi',
-    fontSize: 18,
+    fontSize: context.responsiveFont(
+      22,
+      smallMobile: 14,
+      tablet: 32,
+      largerTables: 40,
+    ),
     fontWeight: FontWeight.w700,
     color: AppColors.gold,
   );
