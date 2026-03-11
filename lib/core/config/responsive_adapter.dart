@@ -130,26 +130,8 @@ extension ResponsiveContext on BuildContext {
   /// Get the responsive adapter for this context
   ResponsiveAdapter get responsive => ResponsiveAdapter(this);
 
-  /// Quick access to responsive spacing
-  ResponsiveSpacing get spacing => responsive.spacing;
-
-  /// Quick access to responsive radius
-  ResponsiveRadius get radius => responsive.radius;
-
-  /// Check if current device is tablet
-  bool get isTablet => responsive.isTablet;
-
-  /// Check if current device is mobile
-  bool get isMobile => responsive.isMobile;
-
-  /// Get scale factor
-  double get scaleFactor => responsive.scaleFactor;
-
   /// Scale any value responsively
   double scale(double value) => responsive.scale(value);
-
-  /// Scale font size responsively
-  double scaleFont(double fontSize) => responsive.scaleFont(fontSize);
 
   /// Text Responsiveness
   double responsiveFont(double mobile, {double? smallMobile, double? tablet, double? largerTables}) {
