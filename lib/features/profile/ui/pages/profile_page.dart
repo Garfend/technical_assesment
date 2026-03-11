@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:technical_assesment/core/config/go_router_extensions.dart';
 import 'package:technical_assesment/core/config/widget_extensions.dart';
 import 'package:technical_assesment/core/local_data/mock_data.dart';
 import 'package:technical_assesment/features/home/data/models/user_model.dart';
@@ -20,6 +21,7 @@ class ProfilePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: AppColors.scaffoldBackground,
         title: const Text('Your Profile', style: AppTextStyles.sectionTitle),
+        leading: Icon(Icons.arrow_back_ios_new).onTap(context.goToHome),
         actions: [
           IconButton(
             icon: const Icon(Icons.settings_outlined),
